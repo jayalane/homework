@@ -57,8 +57,8 @@ def amount_in_coins_string(in_value):
     return _coins_list_to_string(_amount_in_coins(in_value))
 
 
-class TestCoinsr(unittest.TestCase):
-    def test_leap(self):
+class TestCoins(unittest.TestCase):
+    def test_coins(self):
         self.assertEqual(amount_in_coins_string(0.76), '3 quarters and 1 penny')
         self.assertEqual(amount_in_coins_string(0.24), '2 dimes and 4 pennies')
         self.assertEqual(amount_in_coins_string(0), '')
